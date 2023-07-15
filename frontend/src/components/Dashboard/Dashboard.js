@@ -12,12 +12,12 @@ const Dashboard = () => {
         <div className="member">
           <img src={prinaSilImage} alt="Member 1" />
           <h2>Prinan Sil</h2>
-          <p>Structure Design And Testing</p>
+          <p>System Architect And QA Engineer</p>
         </div>
         <div className="member">
           <img src={shabuImage} alt="Member 2" />
           <h2>Swabarna Banerjee</h2>
-          <p>Database Architect And System Analysis</p>
+          <p>Database Architect And System Analyst</p>
         </div>
         <div className="member">
           <img src={profilepicImage} alt="Member 3" />
