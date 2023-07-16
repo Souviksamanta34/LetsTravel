@@ -16,6 +16,9 @@
     "react-scripts": "^5.0.1",
     "sweetalert": "^2.1.2"
   },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.7"
+  },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build --no-source-maps",
