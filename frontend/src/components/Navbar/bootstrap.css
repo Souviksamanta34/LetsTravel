@@ -238,6 +238,10 @@ select {
     word-wrap: normal
 }
 
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button
+}
+
 [type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
     cursor: pointer
 }
@@ -250,6 +254,10 @@ select {
 input[type=checkbox], input[type=radio] {
     box-sizing: border-box;
     padding: 0
+}
+
+input[type=date], input[type=datetime-local], input[type=month], input[type=time] {
+    -webkit-appearance: listbox
 }
 
 textarea {
@@ -282,6 +290,11 @@ progress {
 
 [type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
     height: auto
+}
+
+[type=search] {
+    outline-offset: -2px;
+    -webkit-appearance: none
 }
 
 [type=search]::-webkit-search-decoration {

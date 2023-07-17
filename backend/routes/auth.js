@@ -3,7 +3,6 @@ const router = express.Router();
 const View = require("../models/Authmodel");
 var randomstring = require("randomstring");
 
-
 //POST
 router.post("/", async (req, res) => {
   console.log(req.body);
