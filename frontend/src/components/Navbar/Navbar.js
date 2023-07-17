@@ -14,7 +14,7 @@ class Navbar extends Component {
   logout() {
     if (localStorage.getItem("authToken")) {
       localStorage.clear();
-      window.location.href = "/login";
+      window.location.href = "/home";
       swal("Logged Out!", "Successfully Logged Out", "success");
     } else {
       swal("Not Logged In!", "Please Login first", "warning");
