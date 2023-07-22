@@ -22,7 +22,7 @@ const Dashboard = () => {
         <div className="member">
           <img src={profilepicImage} alt="Member 3" />
           <h2>Souvik Samanta</h2>
-          <p>Developinf Front & Backend</p>
+          <p>Developed Front & Backend</p>
         </div>
       </div>
       <div className="work">
