@@ -4,19 +4,19 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
 
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://lets-travel-virid.vercel.app"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 const app = express();
 
 //Define the port
 const port = process.env.PORT || 5000;
 
 //Allow CORS
-var corsOptions = {
-  origin: 'https://lets-travel-virid.vercel.app',
-  optionsSuccessStatus: 200
-};
-
-app.use(cors(corsOptions));
-
+app.use(cors());
 
 //Initialize Body Parser
 app.use(bodyParser.json());
