@@ -1,56 +1,51 @@
-# Tour Package Reservation
+Tour Package Reservation - Let's Travel
 
-## Let's Travel
+Overview
 
-## Languages
+Let's Travel is a web application that allows users to explore and reserve various tour packages for their dream destinations. The application is built using modern web technologies, including ReactJS for the front end and Express with Mongoose for the back end. It uses MongoDB Atlas as the database to store and manage tour package information.
 
-![JavaScript](https://img.shields.io/badge/Language-JavaScript-orange)
-![HTML](https://img.shields.io/badge/Language-HTML-green)
-![CSS](https://img.shields.io/badge/Language-CSS-blue)
+Main Functionality
 
-## REST API Technology
-JSON Based Web Services<br/>  
-Express<br/>  
-Mongoose<br/>  
- 
-## Front End Technology 
-ReactJS<br/>  
-     Fetch API<br/>  
-     React router dom<br/>  
-Bootstrap CSS<br/>  
-HTML<br/>  
-Nodejs<br/>  
- 
-## Database 
-MongoDB Atlas<br/>  
-Connection url: 
-mongodb+srv://root:bunny@cluster0alh36.gcp.mongodb.net/Tourism?retryWrites=true&w=majority 
+1. Explore Tour Packages: Users can browse through a wide range of tour packages available for different destinations. Each tour package will have details such as the destination name, description, image, and country.
 
-## Configurations
+2. Reservation: Users can reserve tour packages of their choice by providing their details and payment information. The application will ensure a seamless reservation process for the user.
 
-### step 1
-Open terminal in VS Code in Backend Directory 
+3. Admin Privileges: The application is designed to have an admin who has special privileges to add, update, and delete tour packages. Only the admin will have access to these functionalities to manage the offerings effectively.
 
-### step 2
-Run `npm install` 
+How to Run the Application
 
-### step 3
-Run `node app` to start backend server.
+Backend Setup
 
-### step 4
-Now open terminal in VS Code in Frontend Directory. 
- 
-### step 5
-Run `npm install` 
+1. Open the terminal in the "Backend" directory.
 
-### step 6
-Run `npm start` to run the app in development mode. 
+2. Run npm install to install the required dependencies.
 
-### step 7
-Open http://localhost:3000 to view it in the browser. 
+3. Run node app to start the backend server.
 
-## ⚠ Important
+Frontend Setup
 
-Admin has the only priority to add, update and delete tour packages<br/>
+1. Open the terminal in the "Frontend" directory.
 
+2. Run npm install to install the required dependencies.
 
+3. Run npm start to run the application in development mode.
+
+4. Open http://localhost:3000 in your browser to access the application.
+
+Database Configuration
+
+The application uses MongoDB Atlas as the database. The MongoDB connection URL is provided below:
+
+mongodb+srv://Yourusername:YourPassword@cluster0alh36.gcp.mongodb.net/Tourism?retryWrites=true&w=majority
+
+User Roles
+
+User: Regular users can explore and reserve tour packages. They cannot perform administrative tasks.
+
+Admin: The admin has special privileges to manage tour packages. Only the admin can add, update, and delete tour packages.
+
+Important Note
+
+It's important to note that only the admin has the authority to perform administrative tasks on tour packages. Regular users can only reserve tour packages; they cannot modify or delete them.
+
+Enjoy exploring and reserving your dream destinations with Let's Travel!
