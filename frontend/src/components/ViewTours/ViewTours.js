@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./ViewTours.css";
 import { Link } from "react-router-dom";
+// Remove ".map" from the end of the import URL
+import "bootstrap/dist/css/bootstrap.min.css";
 const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 class ViewTours extends Component {
