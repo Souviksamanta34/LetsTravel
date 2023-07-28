@@ -60,7 +60,6 @@ router.post("/update", async (req, res) => {
           price: req.body.price,
           tdescription: req.body.tdescription,
           tnumber: req.body.tnumber,
-     
         },
       }
     );
