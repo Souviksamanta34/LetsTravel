@@ -36,7 +36,7 @@ Database Configuration
 
 The application uses MongoDB Atlas as the database. The MongoDB connection URL is provided below:
 
-mongodb+srv://root:bunny@cluster0alh36.gcp.mongodb.net/Tourism?retryWrites=true&w=majority
+mongodb+srv://Yourusername:YourPassword@cluster0alh36.gcp.mongodb.net/Tourism?retryWrites=true&w=majority
 
 User Roles
 
