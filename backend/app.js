@@ -10,22 +10,12 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 //Allow CORS
-app.use(cors({
-  origin: function(origin, callback) {
-    const allowedOrigins = [
-      "https://lets-travel-virid.vercel.app", 
-      "http://localhost:3000", 
-      "http://127.0.0.1:5500" // add as many origins as you like.
-    ];
-    if (!origin) return callback(null, true);  
-    if (allowedOrigins.indexOf(origin) === -1) {
-      let msg = 'CORS policy for this site does not ' +
-                'allow access from the specified Origin.';
-      return callback(new Error(msg), false);
-    }
-    return callback(null, true);
-  }
-}));
+var corsOptions = {
+  origin: 'https://lets-travel-virid.vercel.app',
+  optionsSuccessStatus: 200
+};
+
+app.use(cors(corsOptions));
 
 
 //Initialize Body Parser
