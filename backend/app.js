@@ -3,14 +3,18 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
+const allowedOrigins = ['http://localhost:3000', 'https://lets-travel-virid.vercel.app'];
+const app = express();
 
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://lets-travel-virid.vercel.app"); // update to match the domain you will make the request from
+
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  if (allowedOrigins.includes(origin)) {
+     res.setHeader('Access-Control-Allow-Origin', origin);
+  }
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
 });
-
-const app = express();
 
 //Define the port
 const port = process.env.PORT || 5000;
