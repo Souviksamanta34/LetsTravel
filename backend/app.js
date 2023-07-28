@@ -11,7 +11,7 @@ const port = process.env.PORT || 5000;
 
 //Allow CORS
 app.use(cors({
-  origin: "*",
+  origin: "https://lets-travel-virid.vercel.app",
 }));
 
 //Initialize Body Parser
