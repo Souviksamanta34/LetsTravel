@@ -55,10 +55,8 @@ export class ViewTours extends Component {
                     {value.tnumber}
                   </p>
                   <div className="text-center">
-                    <Link to="/add">
-                      <a href="#" className="btn btn-primary">
-                        Book Now
-                      </a>
+                    <Link to="/add" className="btn btn-primary">
+                      Book Now
                     </Link>
                   </div>
                 </div>
