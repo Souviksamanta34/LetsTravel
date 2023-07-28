@@ -3,27 +3,47 @@ import "./ViewTours.css";
 import { Link } from "react-router-dom";
 const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
-export class ViewTours extends Component {
+class ViewTours extends Component {
   constructor(props) {
     super(props);
     this.state = {
       tours: [],
+      isLoading: true,
+      error: null,
     };
   }
 
   async componentDidMount() {
     try {
       const response = await fetch(`${apiUrl}/view`);
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
       const responseJson = await response.json();
       this.setState({
         tours: responseJson,
+        isLoading: false,
       });
     } catch (error) {
-      console.error(error);
+      console.error("Error fetching data:", error);
+      this.setState({
+        error: "Failed to fetch tour data. Please try again later.",
+        isLoading: false,
+      });
     }
   }
 
   render() {
+    const { tours, isLoading, error } = this.state;
+
+    if (isLoading) {
+      return <div>Loading...</div>;
+    }
+
+    if (error) {
+      return <div>{error}</div>;
+    }
+
     return (
       <div className="container">
         <br />
@@ -34,7 +54,7 @@ export class ViewTours extends Component {
         <br />
 
         <div className="row">
-          {this.state.tours.map((value, key) => (
+          {tours.map((value, key) => (
             <div className="col-md-4" key={key}>
               <div className="card">
                 <img
