@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const path = require("path");
-const allowedOrigins = ['http://localhost:3000', 'https://lets-travel-virid.vercel.app'];
+const allowedOrigins = ['http://localhost:3000', 'https://lets-travel-virid.vercel.app', 'https://lets-travel-backend.vercel.app'];
 const app = express();
 
 
