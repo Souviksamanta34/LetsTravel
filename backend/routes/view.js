@@ -5,9 +5,10 @@ const View = require("../models/Viewmodel");
 router.get("/", async (req, res) => {
   try {
     const viewList = await View.find();
-    res.json(viewList);
+    res.status(200).json(viewList);
   } catch (err) {
-    res.json({ message: err });
+    console.error(err);
+    res.status(500).json({ message: err });
   }
 });
 
