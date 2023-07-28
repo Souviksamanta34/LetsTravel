@@ -3,6 +3,8 @@ import "./signupStyles.css";
 import swal from "sweetalert";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 
 const initialState = {
   userName: "",
@@ -88,7 +90,7 @@ class SignUpForm extends Component {
     let thisState = this;
     let stateaccess = this.state;
     alert(JSON.stringify(this.state));
-    fetch("http://localhost:5000/signup", {
+    fetch(`${apiUrl}/signup`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

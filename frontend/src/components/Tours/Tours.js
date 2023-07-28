@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import add from "./add.png";
 import { createHashHistory } from "history";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 const initialState = {
   tname: "",
@@ -83,7 +84,7 @@ class Tours extends React.Component {
     ) {
       return alert("Cannot submit empty fields");
     }
-    fetch("http://localhost:5000/view", {
+    fetch(`${apiUrl}/view`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -3,6 +3,7 @@ import "./AddStyles.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import himachal from "./himachal.jpg";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 const initialState = {
   name: "",
@@ -105,7 +106,7 @@ class Add extends React.Component {
     ) {
       return alert("Cannot submit empty fields");
     }
-    fetch("http://localhost:5000/users", {
+    fetch(`${apiUrl}/users`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

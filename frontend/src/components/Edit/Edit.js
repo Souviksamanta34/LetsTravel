@@ -3,6 +3,8 @@ import "./Edit.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import cancelled from "./cancelled.png";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 
 class Edit extends Component {
   constructor(props) {
@@ -32,7 +34,7 @@ class Edit extends Component {
     if (keyword === "") {
       return alert("This field is required");
     }
-    fetch("http://localhost:5000/view/search", {
+    fetch(`${apiUrl}/view/search`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +87,7 @@ class Edit extends Component {
       }
     });
 
-    fetch("http://localhost:5000/view/delete", {
+    fetch(`${apiUrl}/view/delete`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +119,7 @@ class Edit extends Component {
     if (updateDoc === "") {
       return alert("Please specify the package number");
     }
-    fetch("http://localhost:5000/view/update", {
+    fetch(`${apiUrl}/view/update`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

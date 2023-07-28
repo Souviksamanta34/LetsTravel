@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./ViewTours.css";
 import { Link } from "react-router-dom";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
 
 export class ViewTours extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ export class ViewTours extends Component {
 
   async componentDidMount() {
     try {
-      const response = await fetch("http://localhost:5000/view");
+      const response = await fetch(`${apiUrl}/view`);
       const responseJson = await response.json();
       this.setState({
         tours: responseJson,

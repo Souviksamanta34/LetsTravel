@@ -4,6 +4,8 @@ import { fakeAuth } from "./MyHome";
 import swal from "sweetalert";
 import person from "./person.png";
 import { Link } from "react-router-dom";
+const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+
 
 class Login extends Component {
   constructor(props) {
@@ -30,7 +32,7 @@ class Login extends Component {
     // console.log(this.state.adminEmail);
     // console.log(this.state.adminPassword);
 
-    fetch("http://localhost:5000/auth", {
+    fetch(`${apiUrl}/auth`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
