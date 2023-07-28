@@ -4,7 +4,7 @@ import { fakeAuth } from "./MyHome";
 import swal from "sweetalert";
 import person from "./person.png";
 import { Link } from "react-router-dom";
-const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000";
 
 
 class Login extends Component {

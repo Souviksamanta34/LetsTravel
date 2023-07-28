@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import add from "./add.png";
 import { createHashHistory } from "history";
-const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000";
 
 const initialState = {
   tname: "",

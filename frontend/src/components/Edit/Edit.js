@@ -3,7 +3,7 @@ import "./Edit.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import cancelled from "./cancelled.png";
-const apiUrl = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000";
 
 
 class Edit extends Component {
