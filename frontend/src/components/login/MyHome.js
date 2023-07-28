@@ -7,7 +7,7 @@ import Dashboard from "../Dashboard/Dashboard";
 import Add from "../Add/Add";
 import Tours from "../Tours/Tours";
 import Edit from "../Edit/Edit";
-import ViewTours from "../ViewTours//ViewTours";
+import ViewTours from "../ViewTours/ViewTours";
 
 import {
   BrowserRouter as Router,
