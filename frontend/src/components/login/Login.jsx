@@ -4,7 +4,7 @@ import { fakeAuth } from "./MyHome";
 import swal from "sweetalert";
 import person from "./person.png";
 import { Link } from "react-router-dom";
-const apiUrl = "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 class Login extends Component {
   constructor(props) {

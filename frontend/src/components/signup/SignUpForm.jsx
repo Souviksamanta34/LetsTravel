@@ -3,7 +3,7 @@ import "./signupStyles.css";
 import swal from "sweetalert";
 import { Link } from "react-router-dom";
 import emailjs from "emailjs-com";
-const apiUrl = "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 const initialState = {
   userName: "",

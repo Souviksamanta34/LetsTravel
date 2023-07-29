@@ -3,7 +3,7 @@ import "./Edit.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import cancelled from "./cancelled.png";
-const apiUrl = "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
+const apiUrl = process.env.REACT_APP_API_URL;
 
 
 class Edit extends Component {
