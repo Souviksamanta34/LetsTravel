@@ -1,7 +1,23 @@
 import React, { Component } from "react";
 import "./ViewTours.css";
 import { Link } from "react-router-dom";
-const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
+
+const getApiUrl = () => {
+  // Check if the current environment is production
+  if (process.env.NODE_ENV === "production") {
+    return "https://lets-travel-backend.vercel.app";
+  }
+
+  // Check if the current environment is development
+  if (process.env.NODE_ENV === "development") {
+    return "http://localhost:5000";
+  }
+
+  // Default to the production URL if the environment is not explicitly set
+  return "https://lets-travel-backend.vercel.app";
+};
+
+const apiUrl = getApiUrl();
 
 class ViewTours extends Component {
   constructor(props) {
