@@ -2,22 +2,7 @@ import React, { Component } from "react";
 import "./ViewTours.css";
 import { Link } from "react-router-dom";
 
-const getApiUrl = () => {
-  // Check if the current environment is production
-  if (process.env.NODE_ENV === "production") {
-    return "https://letstravel-mpwd.onrender.com/";
-  }
-
-  // Check if the current environment is development
-  if (process.env.NODE_ENV === "development") {
-    return "http://localhost:5000";
-  }
-
-  // Default to the production URL if the environment is not explicitly set
-  return "https://letstravel-mpwd.onrender.com/";
-};
-
-const apiUrl = getApiUrl();
+const apiUrl = process.env.REACT_APP_API_URL;
 
 class ViewTours extends Component {
   constructor(props) {
