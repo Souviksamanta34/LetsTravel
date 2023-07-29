@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const getApiUrl = () => {
   // Check if the current environment is production
   if (process.env.NODE_ENV === "production") {
-    return "https://lets-travel-backend.vercel.app";
+    return "https://letstravel-mpwd.onrender.com/";
   }
 
   // Check if the current environment is development
@@ -14,7 +14,7 @@ const getApiUrl = () => {
   }
 
   // Default to the production URL if the environment is not explicitly set
-  return "https://lets-travel-backend.vercel.app";
+  return "https://letstravel-mpwd.onrender.com/";
 };
 
 const apiUrl = getApiUrl();

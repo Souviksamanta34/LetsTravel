@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import add from "./add.png";
 import { createHashHistory } from "history";
-const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
+const apiUrl = "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
 
 const initialState = {
   tname: "",
