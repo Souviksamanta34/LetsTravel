@@ -3,7 +3,7 @@ import "./AddStyles.css";
 import { Link } from "react-router-dom";
 import swal from "sweetalert";
 import himachal from "./himachal.jpg";
-const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000";
+const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
 
 const initialState = {
   name: "",

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./ViewTours.css";
 import { Link } from "react-router-dom";
-const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000";
+const apiUrl = "https://lets-travel-backend.vercel.app" || "http://localhost:5000" || "https://letstravel-mpwd.onrender.com";
 
 class ViewTours extends Component {
   constructor(props) {
