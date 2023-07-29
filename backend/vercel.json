@@ -1,10 +1,16 @@
 {
-    "headers": [
-        {
-            "source": "/(.*)",
-            "headers": [
-                { "key": "Access-Control-Allow-Origin", "value": "https://quiet-cassata-f61e0f.netlify.app" }
-            ]
+    "version": 2,
+    "routes": [
+      {
+        "src": "/view",
+        "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+        "dest": "https://lets-travel-backend.vercel.app/view",
+        "headers": {
+          "Access-Control-Allow-Origin": "https://lets-travel-virid.vercel.app",
+          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+          "Access-Control-Allow-Headers": "Content-Type, Authorization"
         }
+      }
     ]
-}
+  }
+  
