@@ -25,9 +25,6 @@ app.use((req, res, next) => {
 //Define the port
 const port = process.env.PORT || 5000;
 
-//Allow CORS
-app.use(cors());
-
 //Initialize Body Parser
 app.use(bodyParser.json());
 app.use(
