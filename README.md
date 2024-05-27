@@ -44,7 +44,7 @@ User Roles
 
 User: Regular users can explore and reserve tour packages. They cannot perform administrative tasks.
 
-Admin: The admin has special privileges to manage tour packages. Only the admin can add, update, and delete tour packages.
+Admin: The admin has special privileges to manage tour packages. Only the admin can add, update, and delete tour package.
 
 Important Note
 
