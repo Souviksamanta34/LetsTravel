@@ -50,4 +50,5 @@ Important Note
 
 It's important to note that only the admin has the authority to perform administrative tasks on tour packages. Regular users can only reserve tour packages; they cannot modify or delete them.
 
-Enjoy exploring and reserving your dream destinations with Let's Travel!
+Enjoy exploring and reserving your dream destinations with Let's Travel
+
