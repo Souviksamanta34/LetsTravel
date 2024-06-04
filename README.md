@@ -46,7 +46,7 @@ User: Regular users can explore and reserve tour packages. They cannot perform a
 
 Admin: The admin has special privileges to manage tour packages. Only the admin can add, update, and delete tour package.
 
-Important Note
+Important Notes
 
 It's important to note that only the admin has the authority to perform administrative tasks on tour packages. Regular users can only reserve tour packages; they cannot modify or delete them.
 
